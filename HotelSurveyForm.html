@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Hotel Survey Form</h1>
+    <form id="survey-form">
+        <p id="description">Please fill out this quick survey regarding your recent stay at the hotel. We appreciate
+            your feedback!</p>
+        <section>
+            <div>
+                <label for="name" id="name-label" required>Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Room</label>
+                <input type="number" id="number" placeholder="Enter your room number" min="315" max="1227">
+            </div>
+            <div>
+                <label for="dropdown" id="dropdown-label">Room Type</label>
+                <select name="roomtype" id="dropdown">
+                    <option value="">--Please select room type--</option>
+                    <option value="k">King</option>
+                    <option value="q">Queen</option>
+                </select>
+            </div>
+            <div>
+                <h4>Did you choose rewards points or breakfast?</h4>
+                <input type="radio" id="points" name="rewards" value="p">
+                <label for="points" name="rewards">Points</label>
+                <input type="radio" id="breakfast" name="rewards" value="b">
+                <label for="breakfast" name="rewards">Breakfast</label>
+            </div>
+            <div>
+                <h4>Which days, if any, did you attend hotel events?</h4>
+                <label for="mon" name="days">Monday</label>
+                <input type="checkbox" name="days" id="mon" value="mon">
+                <label for="tue" name="days">Tuesday</label>
+                <input type="checkbox" name="days" id="tue" value="tue">
+                <label for="wed" name="days">Wednesday</label>
+                <input type="checkbox" name="days" id="wed" value="wed">
+                <label for="thu" name="days">Thurday</label>
+                <input type="checkbox" name="days" id="thu" value="thu">
+                <label for="fri" name="days">Friday</label>
+                <input type="checkbox" name="days" id="fri" value="fri">
+                <label for="sat" name="days">Saturday</label>
+                <input type="checkbox" name="days" id="sat" value="sat">
+                <label for="sun" name="days">Sunday</label>
+                <input type="checkbox" name="days" id="sun" value="sun">
+            </div>
+            <div>
+                <label for="feedback">Please include any additional comments you have regarding your recent
+                    stay:</label>
+                <textarea for="feedback" name="feedback"></textarea>
+            </div>
+        </section>
+        <button id="submit">Submit Survey</button>
+    </form>
+</body>
+<footer>
+    <p>This survey form was created by the one and only, Jason Messmore</p>
+</footer>
+
+</html>
