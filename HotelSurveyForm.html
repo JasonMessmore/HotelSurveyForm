@@ -6,27 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Survey Form</title>
+    <link rel="stylesheet" href="C:\Users\Jason\Documents\Summer 2022\Coding\hotelsurveyform\surveystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="bform">
+<body>
     <h1 id="title">Hotel Survey Form</h1>
     <form id="survey-form">
-        <p id="description">Please fill out this quick survey regarding your recent stay at the hotel. We greatly
-            appreciate your feedback!</p>
-        <section>
-            <div>
+        <p id="description"><em>Please fill out this quick survey regarding your recent stay at the hotel. We greatly
+                appreciate your feedback!</em></p>
+        <section id="feedback">
+            <div class="name">
                 <label for="name" id="name-label" required>Name</label>
                 <input type="text" id="name" placeholder="Enter your name" required>
             </div>
-            <div>
+            <div class="email">
                 <label for="email" id="email-label">Email</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
             </div>
-            <div>
+            <div class="roomnum">
                 <label for="number" id="number-label">Room</label>
                 <input type="number" id="number" placeholder="Enter your room number" min="315" max="1227">
             </div>
-            <div>
+            <div class="roomtype">
                 <label for="dropdown" id="dropdown-label">Room Type</label>
                 <select name="roomtype" id="dropdown">
                     <option value="">--Please select room type--</option>
@@ -34,14 +38,14 @@
                     <option value="q">Queen</option>
                 </select>
             </div>
-            <div>
+            <div class="rewards">
                 <h4 id="break-h4">Did you choose rewards points or breakfast?</h4>
                 <input type="radio" id="points" name="rewards" value="p">
                 <label for="points" name="rewards">Points</label>
                 <input type="radio" id="breakfast" name="rewards" value="b">
                 <label for="breakfast" name="rewards">Breakfast</label>
             </div>
-            <div>
+            <div class="events">
                 <h4>Which days, if any, did you attend hotel events?</h4>
                 <label for="mon" name="days">Monday</label>
                 <input type="checkbox" name="days" id="mon" value="mon">
@@ -58,7 +62,7 @@
                 <label for="sun" name="days">Sunday</label>
                 <input type="checkbox" name="days" id="sun" value="sun">
             </div>
-            <div>
+            <div class="comments">
                 <label for="feedback">Please include any additional comments you have regarding your recent
                     stay:</label>
                 <textarea for="feedback" name="feedback"></textarea>
